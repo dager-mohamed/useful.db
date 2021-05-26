@@ -1,0 +1,21 @@
+{
+  "name": "useful.db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "dist/index.js",
+    "dev": "node src/index.ts",
+    "build": "tsc -p",
+    "doc":"jsdoc -c jsdoc.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^15.6.1"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.6.7"
+  }
+}
