@@ -5,7 +5,7 @@ export class Main {
    * your file should be a "./file"
    * @param {[type]} file main file for database
    */
-   private file: any;
+  private file: any;
   constructor(file: any) {
     this.file = file;
     if (!this.file.includes(".json"))
@@ -98,12 +98,47 @@ export class Main {
    * getAll() function is return you all things in file
    * @returns it return you all things in file
    */
-  getAll():any{
-    const checkFile = check(this.file)
-    try{
-      return checkFile
-    }catch(e){
-      throw Error(e)
+  getAll(): any {
+    const checkFile = check(this.file);
+    try {
+      return checkFile;
+    } catch (e) {
+      throw Error(e);
+    }
+  }
+  /**
+   * math() function is make subtract or divide or add or multiplication
+   * @param num1
+   * @param operator
+   * @param num2
+   */
+  math(data: number, operator: string, num: number) {
+    if (!data) throw TypeError("number(1) required");
+    if (!num) throw TypeError("number(2) required");
+    if (!operator) throw TypeError("operator required");
+    if (typeof data !== "number") throw TypeError("number(1) is not a number");
+    if (typeof num !== "number") throw TypeError("number(2) is not a number");
+    if (typeof operator !== "string")
+      throw TypeError("operator is not a string");
+    const checkFile = check(this.file);
+    try {
+      if (operator === "+") {
+        const answer = data + num;
+        return answer;
+      } else if (operator === "-") {
+        const answer = data - num;
+        return answer;
+      } else if (operator === "/") {
+        const answer = data / num;
+        return answer;
+      } else if (operator === "*") {
+        const answer = data * num;
+        return answer;
+      } else {
+        throw TypeError("wrong operator");
+      }
+    } catch (e) {
+      throw Error(e);
     }
   }
 }
