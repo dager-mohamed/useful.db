@@ -1,7 +1,9 @@
 # what is main language of useful.db?
 **the main language of useful.db is Typescript**
 # installation
-```npm install useful.db```
+```
+npm install useful.db
+```
 # Typescript
 ```ts
 import { Main } from 'useful.db'
