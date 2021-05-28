@@ -1,6 +1,6 @@
 {
   "name": "useful.db",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "useful.db is JSON database you can use it in your project and make your server easy!",
   "main": "./src/main.js",
   "types": "./src/main.ts",
@@ -16,7 +16,13 @@
     "url": "git+https://github.com/dager-mohamed/useful.db.git"
   },
   "keywords": [
-    "useful.db"
+    "useful.db",
+    "db",
+    "database",
+    "database json",
+    "database JSON",
+    "json",
+    "JSON"
   ],
   "author": "Mohamed Ashraf",
   "license": "MIT",
