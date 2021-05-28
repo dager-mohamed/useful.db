@@ -1,21 +1,27 @@
 {
   "name": "useful.db",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
-  "scripts": {
-    "start": "dist/index.js",
-    "dev": "node src/index.ts",
-    "build": "tsc -p",
-    "doc":"jsdoc -c jsdoc.json"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "useful.db is JSON database you can use it in your project and make your server easy!",
+  "main": "./src/main.js",
+  "types": "./src/main.ts",
   "dependencies": {
-    "@types/node": "^15.6.1"
-  },
-  "devDependencies": {
     "jsdoc": "^3.6.7"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dager-mohamed/useful.db.git"
+  },
+  "keywords": [
+    "useful.db"
+  ],
+  "author": "Mohamed Ashraf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dager-mohamed/useful.db/issues"
+  },
+  "homepage": "https://github.com/dager-mohamed/useful.db#readme"
 }
