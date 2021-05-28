@@ -3,13 +3,13 @@
 # installation
 `npm install useful.db`
 # Typescript
-```
+```ts
 import { Main } from 'useful.db'
 
 const db = new Main("./example.json")
 ```
 # Javascript
-```
+```js
 const { Main } = require("useful.db")
 
 const db = new Main("./example.json")
@@ -17,7 +17,7 @@ const db = new Main("./example.json")
 
 # examples
 
-```
+```js
 db.set("example")  /* make a new data */ 
 /* --> {"example", "example"} */
 
