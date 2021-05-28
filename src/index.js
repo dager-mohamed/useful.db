@@ -23,6 +23,8 @@ var Main = /** @class */ (function () {
         if (!data)
             throw TypeError("data parameter is required");
         var checkFile = check(this.file);
+        if (Array.isArray(data))
+            throw TypeError("set() function didn't accept arrays");
         checkFile[data] = data;
         try {
             fs_1.writeFileSync(this.file, JSON.stringify(checkFile, null, 2));
@@ -77,8 +79,6 @@ var Main = /** @class */ (function () {
         if (!data)
             throw TypeError("data parameter is required");
         var checkFile = check(this.file);
-        if (Array.isArray(data))
-            throw TypeError("get() didn't accept array type");
         if (!checkFile[data])
             throw Error("data not found");
         try {

@@ -23,6 +23,7 @@ export class Main {
   set(data: any): any {
     if (!data) throw TypeError("data parameter is required");
     const checkFile: any = check(this.file);
+    if(Array.isArray(data)) throw TypeError("set() function didn't accept arrays")
     checkFile[data] = data;
     try {
       fs.writeFileSync(this.file, JSON.stringify(checkFile, null, 2));
@@ -68,7 +69,6 @@ export class Main {
   get(data: any): any {
     if (!data) throw TypeError("data parameter is required");
     const checkFile = check(this.file);
-    if (Array.isArray(data)) throw TypeError("get() didn't accept array type");
     if (!checkFile[data]) throw Error("data not found");
     try {
       return checkFile[data];
