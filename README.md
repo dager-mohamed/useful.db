@@ -47,3 +47,6 @@ db.math(5, "*", 5)
 db.math(10, "-", "5")
 /* --> 5 */
 ```
+# My bot discord server
+
+https://discord.gg/qVukYFzkkH
