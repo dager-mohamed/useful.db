@@ -150,6 +150,5 @@ My country is Egypt
 My Born date is 8/9/2007
 Entered Programming in 2019
 some languages i know:
-i knowed C++ in 2019 and 2020
-now i know JS and python
+know JS and python
 */
