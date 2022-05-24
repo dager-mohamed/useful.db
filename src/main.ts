@@ -142,13 +142,4 @@ export class Main {
     }
   }
 }
-/*
-Developer of package: dager-mohamed
-**About Me**
-My name is Mohamed
-My country is Egypt
-My Born date is 8/9/2007
-Entered Programming in 2019
-some languages i know:
-know JS and python
-*/
+
